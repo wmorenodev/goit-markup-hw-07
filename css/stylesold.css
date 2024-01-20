@@ -34,23 +34,9 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 
 .section {
@@ -219,40 +205,19 @@ body {
 }
 .charlist {
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .charitem {
-}
-@media screen and (min-width: 768px) {
-  .charitem {
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .charitem {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  }
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .charsvgdiv {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: var(--lightcloud-color);
   border-radius: 4px;
   margin-bottom: 8px;
-}
-@media screen and (min-width: 768px) {
-  .charsvgdiv {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .charsvgdiv {
-    display: flex;
-  }
 }
 
 .charheaderter {
