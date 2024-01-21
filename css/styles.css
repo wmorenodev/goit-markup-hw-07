@@ -271,6 +271,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .sectionthree {
+    display: contents;
     padding-top: 0;
   }
 }
@@ -375,12 +376,31 @@ body {
   fill: var(--lightcloud-color);
 }
 .clientslist {
-  gap: 24px;
+  column-gap: 16px;
+  row-gap: 72px;
+  flex-wrap: wrap;
 }
 .clientsitem {
-  width: calc((100% - 120px) / 6);
   height: 88px;
+  width: calc((100% - 16px) / 2);
 }
+
+@media screen and (min-width: 768px) {
+  .clientslist {
+  }
+  .clientsitem {
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .clientslist {
+    gap: 24px;
+  }
+  .clientsitem {
+    width: calc((100% - 120px) / 6);
+  }
+}
+
 .clientsitem:hover {
   color: var(--pressedocean-color);
 }
