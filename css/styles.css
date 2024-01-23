@@ -111,22 +111,8 @@ body {
 }
 
 .headerc {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .headerc {
-    display: flex;
-    gap: 121px;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .headerc {
-    display: flex;
-    gap: 332px;
-  }
+  display: flex;
+  gap: 332px;
 }
 
 .navlist {
@@ -143,8 +129,13 @@ body {
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 .navigation .logo {
   position: relative;
@@ -167,15 +158,18 @@ body {
   color: var(--lightcloud-color);
 }
 .a-dress {
-  font-style: normal;
-  padding: 24px 0;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .a-dress {
+    display: flex;
+    font-style: normal;
+    padding: 24px 0;
+  }
 }
 .a-dresslist {
 }
 @media screen and (min-width: 768px) {
-  .a-dress {
-    padding: 0;
-  }
   .a-dresslist {
     gap: 12px;
     flex-direction: column;
@@ -183,9 +177,6 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-  .a-dress {
-    padding: 24px 0;
-  }
   .a-dresslist {
     gap: 40px;
     flex-direction: row;
