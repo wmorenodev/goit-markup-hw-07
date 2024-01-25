@@ -342,6 +342,7 @@ body {
 .teamlist {
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -470,7 +471,21 @@ body {
 }
 .fcontainer {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .fcontainer {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .fcontainer {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 .fdivone {
   margin-right: 120px;
