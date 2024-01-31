@@ -111,8 +111,20 @@ body {
 }
 
 .headerc {
-  display: flex;
-  gap: 332px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerc {
+    display: flex;
+    gap: 121px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .headerc {
+    display: flex;
+    gap: 332px;
+  }
 }
 
 .navlist {
@@ -415,9 +427,10 @@ body {
 @media screen and (min-width: 768px) {
   .clientslist {
     column-gap: 24px;
+    justify-content: center;
   }
   .clientsitem {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
   }
 }
 
@@ -488,9 +501,17 @@ body {
   }
 }
 .fdivone {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
-
+@media screen and (min-width: 768px) {
+  .fdivone {
+  }
+}
+@media screen and (min-width: 1158px) {
+  .fdivone {
+    margin-right: 120px;
+  }
+}
 .flogoa {
   display: inline-block;
   margin-bottom: 16px;
@@ -508,8 +529,19 @@ body {
   margin-right: 0;
 }
 .fsocialdiv {
-  margin-right: 80px;
+  margin-bottom: 72px;
 }
+
+@media screen and (min-width: 768px) {
+  .fsocialdiv {
+  }
+}
+@media screen and (min-width: 1158px) {
+  .fsocialdiv {
+    margin-right: 80px;
+  }
+}
+
 .fsmpar {
   font-weight: 500;
   margin-bottom: 16px;
@@ -556,6 +588,8 @@ body {
 .fsubform {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .fsubformlab {
 }
