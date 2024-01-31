@@ -67,26 +67,76 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
             <svg
-              fill="currentColor"
-              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
             >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
+              <g clip-path="url(#clip0_650302_532)">
+                <path
+                  d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                  fill="#2E2F42"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_650302_532">
+                  <rect width="8" height="8" fill="white" />
+                </clipPath>
+              </defs>
             </svg>
           </button>
-
-          <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
-          </ul>
+          <div>
+            <ul class="mobile-menu mobile-nav">
+              <li><a class="link" href="./index.html">Studio</a></li>
+              <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+              <li><a class="link" href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mobile-menu mobile-address">
+              <li>
+                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mobile-menu mobile-social">
+              <li class="tsmitem">
+                <a class="link tsmlink" href=""
+                  ><svg class="tsmsvg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tsmitem">
+                <a class="link tsmlink" href=""
+                  ><svg class="tsmsvg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tsmitem">
+                <a class="link tsmlink" href=""
+                  ><svg class="tsmsvg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="tsmitem">
+                <a class="link tsmlink" href=""
+                  ><svg class="tsmsvg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- menu mobilne -->
@@ -577,7 +627,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src=".mobile-menu.js"></script>
+    <script defer src="./mobile-menu.js"></script>
 
     <script src="./modal.js"></script>
   </body>
